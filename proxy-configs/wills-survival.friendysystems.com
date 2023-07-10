@@ -1,6 +1,6 @@
 {
-  "domainName": "wills-creative.friendysystems.com",
-  "proxyTo": "192.168.68.11:6969",
+  "domainName": "wills-survival.friendysystems.com",
+  "proxyTo": "192.168.68.11:42069",
   "proxyBind": "0.0.0.0",
   "offlineStatus": {
     "versionName": "1.20",
@@ -27,7 +27,7 @@
     "motd": "Join us!"
   },
   "docker": {
-    "containerName": "wills-creative",
+    "containerName": "wills-survival",
     "timeout": 30000
   }
 }
