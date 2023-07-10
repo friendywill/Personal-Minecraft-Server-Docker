@@ -1,7 +1,6 @@
 {
   "domainName": "wills-survival.friendysystems.com",
   "proxyTo": "192.168.68.11:42069",
-  "proxyBind": "0.0.0.0",
   "offlineStatus": {
     "versionName": "1.20",
     "protocolNumber": 757,
