@@ -6,4 +6,4 @@ This project is for my personal minecraft servers, any changes in configurations
 
 Ensure that you have docker and docker-compose installed, then just run `docker-compose up -d` while within the same directory as the cloned repository.
 
-I reccomened cloning the repository into the `/opt` directory, eg `/opt/minecraft-server/`
+I reccomend cloning the repository into the `/opt` directory, eg `/opt/minecraft-server/`
