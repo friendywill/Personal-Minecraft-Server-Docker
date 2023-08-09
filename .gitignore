@@ -2,3 +2,5 @@
 !proxy-configs/
 !/*/config
 !/*/banned-ips
+usercache.json
+eula.txt
