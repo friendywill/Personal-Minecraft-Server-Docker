@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "uuid": "10ee930e-0ab5-32e1-ab55-edaa581df78b",
+    "name": "friendywill",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "758e7e91-71ff-3d75-bdb7-4cab900e8303",
+    "name": "quackstuff",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "fa40cb3f-6ee9-4f6c-b4f1-8cba26744ab3",
+    "name": "friendywill",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "6adb4521-2fd7-4a64-81b7-a65b5bfc35cb",
+    "name": "quackstuff",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

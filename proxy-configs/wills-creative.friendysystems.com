@@ -1,6 +1,6 @@
 {
   "domainName": "wills-creative.friendysystems.com",
-  "proxyTo": "192.168.68.11:6969",
+  "proxyTo": "192.168.68.10:6969",
   "offlineStatus": {
     "maxPlayers": 20,
     "playersOnline": 0,

@@ -2,7 +2,7 @@ version: '3'
 
 services:
   mc-proxy:
-    image: haveachin/infrared:latest
+    image: haveachin/infrared:1.3.4
     container_name: mc-proxy
     restart: unless-stopped
     stdin_open: true
@@ -17,7 +17,7 @@ services:
       INFRARED_CONFIG_PATH: "/configs"
   mc-wills-creative:
     image: marctv/minecraft-papermc-server:latest
-    container_name: wills-creative
+    container_name: mc-wills-creative
     restart: unless-stopped
     environment: 
       PAPERMC_FLAGS: "--nojline"
@@ -30,13 +30,14 @@ services:
       - "23493:25575"
   mc-wills-survival:
     image: marctv/minecraft-papermc-server:latest
-    container_name: wills-survival
+    container_name: mc-wills-survival
     restart: unless-stopped
     environment: 
       PAPERMC_FLAGS: "--nojline"
       TZ: "Australia/Canberra"
-      MEMORYSIZE: "4G"
+      MEMORYSIZE: "8G"
     volumes:
       - ./wills-survival-data/:/data:rw
     ports: 
       - "42069:25565"
+      - "23491:25575"
