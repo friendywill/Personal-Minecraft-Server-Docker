@@ -57,6 +57,7 @@ commands:
   log: true
   tab-complete: 0
   send-namespaced: true
+  enable-spam-exclusions: false
 players:
   disable-saving: false
 world-settings:
