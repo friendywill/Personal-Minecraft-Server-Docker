@@ -16,26 +16,30 @@ services:
     environment:
       INFRARED_CONFIG_PATH: "/configs"
   mc-wills-creative:
-    image: marctv/minecraft-papermc-server:latest
+    image: ghcr.io/itzg/minecraft-server:latest
     container_name: mc-wills-creative
     restart: unless-stopped
     environment: 
-      PAPERMC_FLAGS: "--nojline"
-      TZ: "Australia/Canberra"
-      MEMORYSIZE: "4G"
+      EULA: "TRUE"
+      TYPE: PAPER
+      # PAPERMC_FLAGS: "--nojline"
+      # TZ: "Australia/Canberra"
+      # MEMORYSIZE: "4G"
     volumes:
       - ./wills-creative-data/:/data:rw
     ports: 
       - "6969:25565"
       - "23493:25575"
   mc-wills-survival:
-    image: marctv/minecraft-papermc-server:latest
+    image: ghcr.io/itzg/minecraft-server:latest
     container_name: mc-wills-survival
     restart: unless-stopped
     environment: 
-      PAPERMC_FLAGS: "--nojline"
-      TZ: "Australia/Canberra"
-      MEMORYSIZE: "8G"
+      EULA: "TRUE"
+      TYPE: PAPER
+      # PAPERMC_FLAGS: "--nojline"
+      # TZ: "Australia/Canberra"
+      # MEMORYSIZE: "8G"
     volumes:
       - ./wills-survival-data/:/data:rw
     ports: 
