@@ -22,6 +22,8 @@ services:
     environment: 
       EULA: "TRUE"
       TYPE: PAPER
+      INIT_MEMORY: 1G
+      MAX_MEMORY: 4G
       # PAPERMC_FLAGS: "--nojline"
       # TZ: "Australia/Canberra"
       # MEMORYSIZE: "4G"
@@ -37,9 +39,11 @@ services:
     environment: 
       EULA: "TRUE"
       TYPE: PAPER
+      INIT_MEMORY: 1G
+      MAX_MEMORY: 8G
       # PAPERMC_FLAGS: "--nojline"
       # TZ: "Australia/Canberra"
-      # MEMORYSIZE: "8G"
+      MEMORYSIZE: "8G"
     volumes:
       - ./wills-survival-data/:/data:rw
     ports: 
