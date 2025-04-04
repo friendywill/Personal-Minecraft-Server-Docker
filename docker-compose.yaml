@@ -11,6 +11,7 @@ services:
       - "25565:25565/tcp"
     volumes:
       - "./proxy-configs:/configs"
+      - /var/run/docker.sock:/var/run/docker.sock
     expose:
       - "25565"
     environment:
