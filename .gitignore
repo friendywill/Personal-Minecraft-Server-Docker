@@ -1,6 +1,5 @@
 /*/*
-!proxy-configs/
-!/*/config
+!/*/*.dev
 !/*/banned-ips
 usercache.json
 eula.txt

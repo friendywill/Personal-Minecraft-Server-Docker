@@ -1,0 +1,17 @@
+{
+  "domainName": "wills-survival.friendy.dev",
+  "proxyTo": "192.168.68.10:42069",
+  "offlineStatus": {
+    "maxPlayers": 20,
+    "playersOnline": 0,
+    "motd": "Server is starting, please wait to reconnect"
+  },
+  "onlineStatus": {
+    "maxPlayers": 20,
+    "motd": "Join us!"
+  },
+  "docker": {
+    "containerName": "mc-wills-survival",
+    "timeout": 300000
+  }
+}
