@@ -7,7 +7,7 @@
     "motd": "Connect to start; wait 30 seconds"
   },
   "onlineStatus": {
-    "maxPlayers": 20,
+    "maxPlayers": 20
   },
   "docker": {
     "containerName": "minecraft-server-survival-1",
