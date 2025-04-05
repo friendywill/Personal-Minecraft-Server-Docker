@@ -1,0 +1,16 @@
+{
+  "domainName": "survival.friendy.dev",
+  "proxyTo": "192.168.68.10:25562",
+  "offlineStatus": {
+    "maxPlayers": 20,
+    "playersOnline": 0,
+    "motd": "Connect to start; wait 30 seconds"
+  },
+  "onlineStatus": {
+    "maxPlayers": 20,
+  },
+  "docker": {
+    "containerName": "minecraft-server-survival-1",
+    "timeout": 300000
+  }
+}

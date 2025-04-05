@@ -1,9 +1,6 @@
-version: '3'
-
 services:
-  mc-proxy:
+  proxy:
     image: haveachin/infrared:1.3.4
-    container_name: mc-proxy
     restart: unless-stopped
     stdin_open: true
     tty: true
@@ -12,13 +9,10 @@ services:
     volumes:
       - "./proxy-configs:/configs"
       - /var/run/docker.sock:/var/run/docker.sock
-    expose:
-      - "25565"
     environment:
       INFRARED_CONFIG_PATH: "/configs"
-  mc-wills-creative:
+  creative:
     image: ghcr.io/itzg/minecraft-server:latest
-    container_name: mc-wills-creative
     restart: unless-stopped
     environment: 
       EULA: "TRUE"
@@ -29,14 +23,14 @@ services:
       # TZ: "Australia/Canberra"
       # MEMORYSIZE: "4G"
     volumes:
-      - ./wills-creative-data/:/data:rw
+      - ./creative-data/:/data:rw
     ports: 
-      - "6969:25565"
-      - "23493:25575"
-  mc-wills-survival:
+      - "25563:25565"
+  survival:
     image: ghcr.io/itzg/minecraft-server:latest
-    container_name: mc-wills-survival
     restart: unless-stopped
+    ports:
+      - "25562:25565"
     environment: 
       EULA: "TRUE"
       TYPE: PAPER
@@ -46,7 +40,4 @@ services:
       # TZ: "Australia/Canberra"
       MEMORYSIZE: "8G"
     volumes:
-      - ./wills-survival-data/:/data:rw
-    ports: 
-      - "42069:25565"
-      - "23491:25575"
+      - ./survival-data/:/data:rw

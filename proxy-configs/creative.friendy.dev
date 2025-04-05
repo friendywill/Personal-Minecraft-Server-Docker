@@ -1,17 +1,17 @@
 {
-  "domainName": "wills-survival.friendy.dev",
-  "proxyTo": "192.168.68.10:42069",
+  "domainName": "creative.friendy.dev",
+  "proxyTo": "192.168.68.10:25563",
   "offlineStatus": {
     "maxPlayers": 20,
     "playersOnline": 0,
-    "motd": "Server is starting, please wait to reconnect"
+    "motd": "Connect to start; wait 30 seconds"
   },
   "onlineStatus": {
     "maxPlayers": 20,
     "motd": "Join us!"
   },
   "docker": {
-    "containerName": "mc-wills-survival",
+    "containerName": "minecraft-server-creative-1",
     "timeout": 300000
   }
 }

@@ -1,5 +1,16 @@
-/*/*
 !/*/*.dev
+cache
+crash-reports
+*.jar
+libraries
+logs
+plugins
+versions
+world*
+*.env
+.papermv*
+.rcon-cli.yaml
+server.properties
 !/*/banned-ips
 usercache.json
 eula.txt
